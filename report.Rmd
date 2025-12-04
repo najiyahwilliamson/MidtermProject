@@ -1,7 +1,11 @@
 ---
-title: f75 Outcomes
+title: Midterm Project
 author: Najiyah Williamson, Julia Arwari, Mirra Chinta, Omar Abdul-Rahman 
-output: html_document
+output: 
+  html_document:
+    theme: yeti
+    highlight: espresso
+    df_print: paged
 ---
 
 ```{r, here-i-am, include = FALSE}
@@ -20,20 +24,6 @@ knitr::include_graphics(
 ```
 **Table 1. Overall Summary of Measurements (N = 513).**
 
-### Figure 1: Comparison of MUAC Outcomes Between Modified and Standard F75.
-```{r creating_figure, echo=FALSE}
-#| fig.align = "center",
-#| out.width = "600px"
-knitr::include_graphics(here::here("outputs/muac_outcomes_by_arm.png"))
-```
-
-### Figure 2: Comparison of Weight Outcomes Between Modified and Standard F75.
-```{r creating_figure2, echo=FALSE}
-#| fig.align = "center",
-#| out.width = "600px"
-knitr::include_graphics(here::here("outputs/weight_outcomes_by_arm.png"))
-```
-
 ### Table 2: Bivariate Analysis
 ```{r creating_figure3, echo=FALSE}
 #| fig.align = "center",
@@ -42,4 +32,21 @@ knitr::include_graphics(
   here::here("outputs", "bivariate_A_table.png")
 )
 ```
-**Table 2. Comparison of Measurements Between Treatment Arms.**
+**Table 2. Weight outcomes by treatment arm.**
+
+### Figure 1: Comparison of MUAC Outcomes Between Modified and Standard F75.
+```{r creating_figure, echo=FALSE}
+#| fig.align = "center",
+#| out.width = "600px"
+knitr::include_graphics(here::here("outputs/muac_outcomes_by_arm.png"))
+```
+**Figure 1. MUAC outcomes by treatment arm.**
+
+### Figure 2: Comparison of Weight Outcomes Between Modified and Standard F75.
+```{r creating_figure2, echo=FALSE}
+#| fig.align = "center",
+#| out.width = "600px"
+knitr::include_graphics(here::here("outputs/weight_outcomes_by_arm.png"))
+```
+**Figure 2. Comparison of Measurements Between Treatment Arms.**
+
